@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30524.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4FCB6A5C-513F-4C55-8006-9F379857087D}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,11 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5E1B9247-FB17-44F5-B42A-A75F42127CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cyclonedx", "src\cyclonedx\cyclonedx.csproj", "{29B6E102-868B-4F82-BD77-3F35C5B6BDB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cyclonedx", "src\cyclonedx\cyclonedx.csproj", "{29B6E102-868B-4F82-BD77-3F35C5B6BDB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E65122F8-65AF-4902-AD34-A90ECC475744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cyclonedx.tests", "tests\cyclonedx.tests\cyclonedx.tests.csproj", "{88BAE226-2865-4826-BD67-8DA2DD00FF1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cyclonedx.tests", "tests\cyclonedx.tests\cyclonedx.tests.csproj", "{88BAE226-2865-4826-BD67-8DA2DD00FF1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +58,10 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29B6E102-868B-4F82-BD77-3F35C5B6BDB9} = {5E1B9247-FB17-44F5-B42A-A75F42127CD1}
+		{88BAE226-2865-4826-BD67-8DA2DD00FF1E} = {E65122F8-65AF-4902-AD34-A90ECC475744}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {382B7E41-7FCF-43AE-A35A-2CACB3ADD91B}
 	EndGlobalSection
@@ -68,9 +72,5 @@ Global
 		$0.StandardHeader = $2
 		$0.VersionControlPolicy = $3
 		version = 0.5.0
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{29B6E102-868B-4F82-BD77-3F35C5B6BDB9} = {5E1B9247-FB17-44F5-B42A-A75F42127CD1}
-		{88BAE226-2865-4826-BD67-8DA2DD00FF1E} = {E65122F8-65AF-4902-AD34-A90ECC475744}
 	EndGlobalSection
 EndGlobal
